@@ -14,24 +14,24 @@ for example:
 ```
 # input.yaml
 b:
- y:
+ y: "abc"
  x:
   - 2
   - 1
- z:
-c:
-a:
+ z: foo
+c: bar
+a: baz
 ```
 
 became:
 ```
-a: null
+a: baz
 b:
   x:
   - 2
   - 1
-  "y": null
-  z: null
-c: null
+  "y": abc
+  z: foo
+c: bar
 ```
 
